@@ -82,8 +82,9 @@ $(document).ready(function () {
         var fd = new FormData();
         fd.append("name", name);
         fd.append('chunk', chunk);
-        fd.append('file', blobOrFile);
         fd.append('chunks', chunks);
+        fd.append('file', blobOrFile);
+        
         fd.append('time', new Date().getTime());
         fd.append('user', "temp");
         var xhr;
